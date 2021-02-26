@@ -1,0 +1,247 @@
+---
+title: 'SARS-CoV-2 Data (Type 1)'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Import Libraries
+
+```{r message=FALSE}
+library(dplyr)
+library(ggplot2)
+library(plotly)
+options(width=5000)
+```
+
+## Read the Data
+
+First, read the data from the TSV file.
+
+```{r}
+data <- read.csv(file='dataset/GSE147507_RawReadCounts.tsv', header=TRUE, sep="\t")
+```
+
+For now, focus only on the healthy and SARS-CoV2 infected type 1 cells (column 1-7).
+Rename column names for readability and add a column to serve as the index.
+
+```{r}
+colnames(data)[1] <- 'gene'
+colnames(data)[2] <- 'healthy_1'
+colnames(data)[3] <- 'healthy_2'
+colnames(data)[4] <- 'healthy_3'
+colnames(data)[5] <- 'sarscov2_1'
+colnames(data)[6] <- 'sarscov2_2'
+colnames(data)[7] <- 'sarscov2_3'
+data <- data %>% mutate(gene_id=rownames(data))
+```
+
+Select the relevant columns only.
+
+```{r}
+data <- data %>% select(gene_id, gene, healthy_1, healthy_2, healthy_3, sarscov2_1, sarscov2_2, sarscov2_3)
+```
+
+```{r echo=FALSE}
+head(data)
+```
+
+## How similar are the protein productions within each group?
+
+Investigate the similarity between healthy cells and the similarity between infected cells.
+
+Compute the standard deviation for each gene for (1) healthy cells and (2) SARS_CoV2 cells.
+
+```{r}
+data.sd <- data %>% rowwise() %>% mutate(sd_healthy = sd(c(healthy_1, healthy_2, healthy_3)), sd_infected = sd(c(sarscov2_1, sarscov2_2, sarscov2_3))) %>% ungroup()
+head(data.sd)
+```
+
+Compare the standard deviation values between healthy and infected cells.
+
+```{r echo=FALSE, message=FALSE}
+sd_healthy <- data.sd$sd_healthy %>% unlist()
+sd_infected <- data.sd$sd_infected %>% unlist()
+t1 <- data.frame(sd=sd_infected, group=rep('infected', length(sd_infected)))
+t2 <- data.frame(sd=sd_healthy, group=rep('healthy', length(sd_healthy)))
+temp <- rbind(t1, t2)
+ggplotly(ggplot(data=temp) + geom_histogram(aes(x=sd, fill=group), alpha=0.5, position='identity') + xlab("Standard deviation among 3 samples for each gene"))
+```
+
+Data is highly skewed, so attempt to apply log transformation on the original values.
+
+```{r}
+epsilon <- 1 # constant value to avoid undefined in the case of 0.
+data.log <- data %>% mutate(healthy_1 = log(healthy_1 + epsilon),
+                            healthy_2 = log(healthy_2 + epsilon),
+                            healthy_3 = log(healthy_3 + epsilon),
+                            sarscov2_1 = log(sarscov2_1 + epsilon),
+                            sarscov2_2 = log(sarscov2_2 + epsilon),
+                            sarscov2_3 = log(sarscov2_3 + epsilon))
+head(data.log)
+```
+
+Once again, compute the standard deviation using the log-transformed values.
+
+```{r}
+data.log.sd <- data.log %>% rowwise() %>% mutate(sd_healthy = sd(c(healthy_1, healthy_2, healthy_3)), sd_infected = sd(c(sarscov2_1, sarscov2_2, sarscov2_3))) %>% ungroup()
+head(data.log.sd)
+```
+
+Plot the comparison of standard deviation of the log-transformed values.
+
+```{r echo=FALSE, message=FALSE}
+sd_healthy <- data.log.sd$sd_healthy %>% unlist()
+sd_infected <- data.log.sd$sd_infected %>% unlist()
+t1 <- data.frame(sd=sd_infected, group=rep('infected', length(sd_infected)))
+t2 <- data.frame(sd=sd_healthy, group=rep('healthy', length(sd_healthy)))
+temp <- rbind(t1, t2)
+ggplotly(ggplot(data=temp) + geom_histogram(aes(x=sd, fill=group), alpha=0.5, position='identity') + xlab("Standard deviation among 3 samples for each gene (log-transformed)"))
+```
+
+If we exclude the zeroes (which are likely to be the ones with 0s for all three samples):
+
+```{r echo=FALSE, message=FALSE}
+sd_healthy <- data.log.sd$sd_healthy %>% unlist()
+sd_infected <- data.log.sd$sd_infected %>% unlist()
+t1 <- data.frame(sd=sd_infected, group=rep('infected', length(sd_infected)))
+t2 <- data.frame(sd=sd_healthy, group=rep('healthy', length(sd_healthy)))
+temp <- rbind(t1, t2) %>% filter(sd != 0)
+ggplotly(ggplot(data=temp) + geom_histogram(aes(x=sd, fill=group), alpha=0.5, position='identity') + xlab("Standard deviation among 3 samples for each gene (log-transformed, excluding 0)"))
+```
+
+**Protein production appears to be generally more varied among the infected cell samples than the healthy cell samples**
+
+## Which proteins are produced more or less between infected and healthy cells?
+
+Most naive solution: compute the mean of the three samples for each group.
+
+```{r}
+data.log.mean <- data.log %>% rowwise() %>% mutate(mean_healthy = mean(c(healthy_1, healthy_2, healthy_3)), mean_infected = mean(c(sarscov2_1, sarscov2_2, sarscov2_3))) %>% ungroup()
+head(data.log.mean)
+```
+
+Plot the distribution of the difference in means between the two groups (mean_healthy - mean_infected).
+
+```{r echo=FALSE, message=FALSE}
+ggplotly(ggplot(data=data.log.mean, aes(x=mean_healthy - mean_infected)) + geom_histogram(fill='green', alpha=0.85) + xlab("Difference in mean of healthy cells and infected cells"))
+```
+
+Also compute the p-value of a student's t-test to test for significance
+* (not sure if this is reliable for n=3, probably not)
+
+```{r}
+ttest <- function (x, y) {
+  if (identical(x, y) | min(y-x) == max(y-x)) {
+    return(1)
+  }
+  res <- t.test(x, y)
+  return(res$p.value)
+}
+data.log.mean <- data.log.mean %>% rowwise() %>% mutate(p=ttest(c(healthy_1, healthy_2, healthy_3), c(sarscov2_1, sarscov2_2, sarscov2_3))) %>% ungroup()
+head(data.log.mean)
+```
+
+Identify the top genes that have a low difference in means (infected cell mean is higher).
+
+```{r message=FALSE}
+data.log.mean %>% mutate(diff = mean_healthy - mean_infected) %>% arrange(diff) %>% head(10) %>% select(-gene_id)
+```
+
+Identify the top genes that have a low difference in means (healthy cell mean is higher)
+
+```{r message=FALSE}
+data.log.mean %>% mutate(diff = mean_healthy - mean_infected) %>% arrange(desc(diff)) %>% head(10) %>% select(-gene_id)
+```
+
+Identify the genes that are statistically signifcant according to the t-test with $\alpha<0.05$.
+
+```{r}
+alpha <- 0.05
+data.sig <- data.log.mean %>% mutate(diff = mean_healthy - mean_infected) %>% filter(p<alpha) %>% select(-gene_id) %>% arrange(diff)
+data.sig
+```
+
+
+```{r fig.height=25, fig.width=7, echo=FALSE, message=FALSE}
+data.sig$gene <- droplevels(data.sig$gene)
+data.sig <- data.sig %>% mutate(sorttemp = ifelse(mean_healthy > mean_infected, mean_healthy, mean_healthy + 10000))
+data.sig$gene <- reorder(data.sig$gene, data.sig$sorttemp)
+ggplotly(height=1800,
+         p=ggplot(data=data.sig, aes(y=gene)) + geom_point(aes(x=healthy_1), color='blue') + 
+                                geom_point(aes(x=healthy_2), color='blue') + 
+                                geom_point(aes(x=healthy_3), color='blue') +
+                                geom_point(aes(x=sarscov2_1), color='red') + 
+                                geom_point(aes(x=sarscov2_2), color='red') + 
+                                geom_point(aes(x=sarscov2_3), color='red') +
+  xlab("Protein Rate") + ylab("Gene"))
+```
+
+Do a sanity check by comparing the most and least differences in means with the ones which are significant.
+
+First, for the case where the infected mean is greater than the healthy mean:
+
+```{r echo=FALSE}
+n <- 200 # select the top n mean differences
+top <- data.log.mean %>% mutate(diff = mean_healthy - mean_infected) %>% arrange(diff) %>% head(n)
+top$gene <- droplevels(top$gene)
+top$gene <- reorder(top$gene, rev(top$diff))
+top.sig <- top %>% filter(p < alpha)
+top.insig <- top %>% filter(p >= alpha)
+ggplotly(height=(n*16), ggplot(mapping=aes(y=gene)) +
+        geom_point(data=top.sig, aes(x=healthy_1), color='blue') + 
+        geom_point(data=top.sig, aes(x=healthy_2), color='blue') + 
+        geom_point(data=top.sig, aes(x=healthy_3), color='blue') +
+        geom_point(data=top.sig, aes(x=sarscov2_1), color='red') + 
+        geom_point(data=top.sig, aes(x=sarscov2_2), color='red') + 
+        geom_point(data=top.sig, aes(x=sarscov2_3), color='red') + 
+        geom_point(data=top.insig, aes(x=healthy_1), color='lightblue') + 
+        geom_point(data=top.insig, aes(x=healthy_2), color='lightblue') + 
+        geom_point(data=top.insig, aes(x=healthy_3), color='lightblue') +
+        geom_point(data=top.insig, aes(x=sarscov2_1), color='pink') + 
+        geom_point(data=top.insig, aes(x=sarscov2_2), color='pink') + 
+        geom_point(data=top.insig, aes(x=sarscov2_3), color='pink') +
+        scale_y_discrete(drop=FALSE) +
+        xlab("Protein Rate") + ylab("Gene") + ggtitle(paste('Top', n, 'differences, significant values highlighted (infected > healthy)')))
+
+```
+
+Next, for the case where the healthy mean is greater than the infected mean:
+
+```{r echo=FALSE}
+n <- 200 # select the top n mean differences
+top <- data.log.mean %>% mutate(diff = mean_healthy - mean_infected) %>% arrange(desc(diff)) %>% head(n)
+top$gene <- droplevels(top$gene)
+top$gene <- reorder(top$gene, top$diff)
+top.sig <- top %>% filter(p < alpha)
+top.insig <- top %>% filter(p >= alpha)
+ggplotly(height=(n*16), ggplot(mapping=aes(y=gene)) +
+        geom_point(data=top.sig, aes(x=healthy_1), color='blue') + 
+        geom_point(data=top.sig, aes(x=healthy_2), color='blue') + 
+        geom_point(data=top.sig, aes(x=healthy_3), color='blue') +
+        geom_point(data=top.sig, aes(x=sarscov2_1), color='red') + 
+        geom_point(data=top.sig, aes(x=sarscov2_2), color='red') + 
+        geom_point(data=top.sig, aes(x=sarscov2_3), color='red') + 
+        geom_point(data=top.insig, aes(x=healthy_1), color='lightblue') + 
+        geom_point(data=top.insig, aes(x=healthy_2), color='lightblue') + 
+        geom_point(data=top.insig, aes(x=healthy_3), color='lightblue') +
+        geom_point(data=top.insig, aes(x=sarscov2_1), color='pink') + 
+        geom_point(data=top.insig, aes(x=sarscov2_2), color='pink') + 
+        geom_point(data=top.insig, aes(x=sarscov2_3), color='pink') +
+        scale_y_discrete(drop=FALSE) +
+        xlab("Protein Rate") + ylab("Gene") + ggtitle(paste('Top', n, 'differences, significant values highlighted (healthy > infected)')))
+
+```
+
+Here is the histogram of all differences, with the significant differences (p < 0.05) highlighted.
+
+```{r echo=FALSE}
+data.log.mean.sig <- data.log.mean %>% filter(p < alpha)
+data.log.mean.insig <- data.log.mean %>% filter(p >= alpha)
+ggplotly(ggplot(mapping = aes(x=mean_healthy - mean_infected)) +
+  geom_histogram(data=data.log.mean.sig, binwidth=0.1, fill='black', alpha=0.5) +
+  geom_histogram(data=data.log.mean, binwidth=0.1, fill='green', alpha=0.5) +
+  coord_cartesian(ylim=c(0, 100)) + xlab('Difference in mean'))
+```
