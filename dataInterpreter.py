@@ -51,16 +51,61 @@ ferret_data_map = {
 __dataInterpreter_data = pd.read_csv('data/GSE147507_RawReadCounts_Human.tsv', index_col = 0, sep = '\t')
 __dataInterpreter_ferret_data = pd.read_csv('data/GSE147507_RawReadCounts_Ferret.tsv', index_col = 0, sep = '\t')
 
-def get_data(cell_type, treatment, ferret = False, apply_log = True):
+
+def get_data(cell_type, *treatments, ferret = False, apply_log = True):
     if not ferret:
-        result = __dataInterpreter_data[data_map[cell_type][treatment]].copy()
+        columns = []
+        
+        for treatment in treatments:
+            columns += data_map[cell_type][treatment]
+        
+        result = __dataInterpreter_data[columns].copy()
     else:
-        result = __dataInterpreter_ferret_data[ferret_data_map[cell_type][treatment]].copy()
+        columns = []
+        
+        for treatment in treatments:
+            columns += ferret_data_map[cell_type][treatment]
+            
+        result = __dataInterpreter_ferret_data[columns].copy()
 
     if apply_log:
         return np.log(result + 1)
     else:
         return result
+
+    
+def get_data_by_series(series, apply_log = True):
+    result = __dataInterpreter_data.filter(like = "Series" + str(series) + "_").copy()
+    
+    if apply_log:
+        return np.log(result + 1)
+    else:
+        return result
+    
+def get_columns(cell_type, *treatments, ferret = False):
+    columns = []
+    
+    if not ferret:
+        for treatment in treatments:
+            columns += data_map[cell_type][treatment]
+    else:        
+        for treatment in treatments:
+            columns += ferret_data_map[cell_type][treatment]
+    
+    return columns
+
+def get_columns_by_series(series, cell_type, *treatments, ferret = False):
+    columns = []
+    
+    if not ferret:
+        for treatment in treatments:
+            columns += [col for col in data_map[cell_type][treatment] if 'Series' + str(series) + '_' in col]
+    else:        
+        for treatment in treatments:
+            columns += [col for col in ferret_data_map[cell_type][treatment] if 'Series' + str(series) + '_' in col]
+    
+    return columns
+    
 
 def calculate_bins(data, nbins):
     data_max = max(data)
