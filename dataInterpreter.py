@@ -4,8 +4,11 @@ import numpy as np
 import scipy.stats
 import scipy.cluster.hierarchy as sch
 from sklearn.cluster import AgglomerativeClustering
+import re
 
-data_map = {
+__dataInterpreter_base_dir = 'C:\\Users\\Pedro\\Documents\\MasterThesis\\'
+
+__dataInterpreter_data_map = {
     'NHBE': {
         'healthy': ['Series1_NHBE_Mock_1', 'Series1_NHBE_Mock_2', 'Series1_NHBE_Mock_3', 'Series9_NHBE_Mock_1',
                     'Series9_NHBE_Mock_2', 'Series9_NHBE_Mock_3', 'Series9_NHBE_Mock_4'],
@@ -44,7 +47,7 @@ data_map = {
     }
 }
 
-ferret_data_map = {
+__dataInterpreter_ferret_data_map = {
     'nasal_wash': {
         'healthy_day1': ['Series10_FerretNW_Ctl_d1_1', 'Series10_FerretNW_Ctl_d1_2'],
         'sars-cov2_day1': ['Series10_FerretNW_SARS-CoV-2_d1_1', 'Series10_FerretNW_SARS-CoV-2_d1_2'],
@@ -66,8 +69,10 @@ ferret_data_map = {
     }
 }
 
-__dataInterpreter_data = pd.read_csv('data/GSE147507_RawReadCounts_Human.tsv', index_col=0, sep='\t')
-__dataInterpreter_ferret_data = pd.read_csv('data/GSE147507_RawReadCounts_Ferret.tsv', index_col=0, sep='\t')
+__dataInterpreter_data = pd.read_csv(__dataInterpreter_base_dir + 'data/GSE147507_RawReadCounts_Human.tsv', index_col=0,
+                                     sep='\t')
+__dataInterpreter_ferret_data = pd.read_csv(__dataInterpreter_base_dir + 'data/GSE147507_RawReadCounts_Ferret.tsv',
+                                            index_col=0, sep='\t')
 
 
 ################################
@@ -81,10 +86,10 @@ def get_columns(cell_type, *treatments, series=None, ferret=False):
 
     if not ferret:
         for treatment in treatments:
-            columns += data_map[cell_type][treatment]
+            columns += __dataInterpreter_data_map[cell_type][treatment]
     else:
         for treatment in treatments:
-            columns += ferret_data_map[cell_type][treatment]
+            columns += __dataInterpreter_ferret_data_map[cell_type][treatment]
 
     if series is not None:
         res = []
@@ -94,6 +99,18 @@ def get_columns(cell_type, *treatments, series=None, ferret=False):
         return res
 
     return columns
+
+
+def get_complete_data(apply_log=True, remove_zeros=True):
+    result = __dataInterpreter_data.copy()
+    
+    if apply_log:
+        result = np.log(result + 1)
+
+    if remove_zeros:
+        result = result.loc[(result != 0).any(axis=1)]
+
+    return result
 
 
 def get_data(cell_type, *treatments, series=None, ferret=False, apply_log=True, remove_zeros=True):
@@ -119,6 +136,48 @@ def get_data_by_series(series, apply_log=True, remove_zeros=True):
 
     if remove_zeros:
         result = result.loc[(result != 0).any(axis=1)]
+
+    return result
+
+
+def get_data_description():
+    for cell_type in __dataInterpreter_data_map:
+        print('\n', cell_type)
+
+        for treatment in __dataInterpreter_data_map[cell_type]:
+            print('|--' + treatment)
+            series_print = ''
+            for series in __dataInterpreter_data_map[cell_type][treatment]:
+                series_name = series.split('_')[0]
+                if series_name not in series_print:
+                    series_print += '|  |--' + series_name + '\n'
+
+            print(series_print, end='')
+
+
+def get_columns_by_filters(cell_types='all', treatments='all', series='all'):
+    types = []
+
+    if cell_types != 'all':
+        for cell_type in cell_types:
+            types += __dataInterpreter_data_map[cell_type]
+
+    result = []
+
+    if treatments != 'all':
+        for s in types:
+            print(s)
+            for treatment in treatments:
+                if treatment not in s:
+                    continue
+                if series != 'all':
+                    series = [str(elem) for elem in series]
+                    print(series)
+                    series[0] = 'Series' + str(series[0])
+                    r = re.compile('_.*|Series'.join(series) + '_.*')
+                    result += [col for col in s[treatment] if r.match(col)]
+                else:
+                    result += s[treatment]
 
     return result
 
@@ -166,3 +225,20 @@ def plot_dendrogram(data):
     plt.xlabel('Genes')
     plt.ylabel('Distances')
     plt.show()
+
+    
+
+################################
+#                              #
+#      Printing Functions      #
+#                              #
+################################
+
+def printProgressBar(currentValue, maxValue, minValue = 0, size = 100):
+    percComplete = (currentValue - minValue) / (maxValue - minValue)
+    
+    numProgress = int(percComplete * size)
+    
+    bar = '|' + '=' * numProgress + '>' + ' ' * (size - numProgress) + '|'
+    
+    print('\r', bar, end = '')
