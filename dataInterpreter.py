@@ -218,13 +218,14 @@ def get_p_values(test, data, set1, set2, limit=0.05):
     return data.loc[data['p-value'] < limit]
 
 
-def plot_dendrogram(data):
+def plot_dendrogram(data, title = 'Dendrogram', xLabel = 'Genes', yLabel = 'Distances'):
     fig = plt.figure(figsize=(25, 10))
     dendrogram = sch.dendrogram(sch.linkage(data, method="ward"))
-    plt.title('Dendrogram')
-    plt.xlabel('Genes')
-    plt.ylabel('Distances')
+    plt.title(title)
+    plt.xlabel(xLabel)
+    plt.ylabel(yLabel)
     plt.show()
+    return fig
 
     
 

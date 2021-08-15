@@ -1,0 +1,26 @@
+,Adjusted p-value,Combined Score,Cluster
+"regulation of transcription, DNA-templated (GO:0006355)",3.35E-02,16.08,2
+regulation of transcription by RNA polymerase II (GO:0006357),5.02E-02,14.34,2
+protein processing involved in protein targeting to mitochondrion (GO:0006627),3.29E-01,350.17,2
+tRNA modification (GO:0006400),3.29E-01,25.44,2
+protein-containing complex disassembly (GO:0032984),3.32E-01,61.13,1
+DNA replication (GO:0006260),3.32E-01,39.54,1
+RNA methylation (GO:0001510),3.64E-01,24.75,2
+nuclear cell cycle DNA replication initiation (GO:1902315),3.94E-01,153.30,2
+mitotic DNA replication initiation (GO:1902975),3.94E-01,153.30,2
+negative regulation of cell growth (GO:0030308),3.94E-01,19.87,1
+error-prone translesion synthesis (GO:0042276),3.94E-01,55.65,1
+regulation of intracellular signal transduction (GO:1902531),3.94E-01,11.79,1
+error-free translesion synthesis (GO:0070987),3.94E-01,51.41,1
+translesion synthesis (GO:0019985),3.94E-01,35.04,1
+organelle fusion (GO:0048284),3.94E-01,51.41,1
+purine-containing compound metabolic process (GO:0072521),3.94E-01,129.59,1
+succinate transport (GO:0015744),3.94E-01,129.59,1
+mRNA pseudouridine synthesis (GO:1990481),3.94E-01,129.59,1
+positive regulation by symbiont of host autophagy (GO:0075044),3.94E-01,129.59,1
+autophagy of mitochondrion (GO:0000422),3.94E-01,38.21,1
+neuroblast proliferation (GO:0007405),3.94E-01,172.02,1
+regulation of protein sumoylation (GO:0033233),3.94E-01,72.38,1
+peptidyl-asparagine modification (GO:0018196),3.94E-01,59.70,1
+DNA strand elongation involved in DNA replication (GO:0006271),3.94E-01,72.38,1
+mitochondrion disassembly (GO:0061726),3.94E-01,46.00,1

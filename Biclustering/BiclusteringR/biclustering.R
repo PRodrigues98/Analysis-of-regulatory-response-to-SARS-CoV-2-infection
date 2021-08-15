@@ -16,7 +16,7 @@ for(name in data_names){
 # Plaid
 for(i in 1:length(data_names)){
     res <- biclust(data[[i]], method = BCPlaid())
-    writeBiclusterResults(paste("results-", data_names[[i]], "-plaid.txt", sep = ""), res,"BCPlaid, defaults", dimnames(data[[i]])[1][[1]], dimnames(data[[i]])[2][[1]])
+    writeBiclusterResults(paste("results-new-", data_names[[i]], "-plaid.txt", sep = ""), res,"BCPlaid, defaults", dimnames(data[[i]])[1][[1]], dimnames(data[[i]])[2][[1]])
 }
 
 
@@ -25,7 +25,7 @@ for(i in 1:length(data_names)){
 for(i in 1:length(data_names)){
     y <- discretize(data[[i]])
     res <- biclust(y, method = BCXmotifs())
-    writeBiclusterResults(paste("results-", data_names[[i]], "-xMotifs.txt", sep = ""), res,"xMotifs, defaults", dimnames(y)[1][[1]], dimnames(y)[2][[1]])
+    writeBiclusterResults(paste("results-new-", data_names[[i]], "-xMotifs.txt", sep = ""), res,"xMotifs, defaults", dimnames(y)[1][[1]], dimnames(y)[2][[1]])
 }
 
 
@@ -34,6 +34,6 @@ for(i in 1:length(data_names)){
 for(i in 1:length(data_names)){
     y <- data[[i]]
     res <- biclust(y, method = BCCC(), delta = 0.05, alpha = 1, number = 100)
-    writeBiclusterResults(paste("results-", data_names[[i]], "-chengAndChurch.txt", sep = ""), res,"Cheng and Church, delta = 0.05, alpha = 1, number = 100", dimnames(y)[1][[1]], dimnames(y)[2][[1]])
+    writeBiclusterResults(paste("results-new-", data_names[[i]], "-chengAndChurch.txt", sep = ""), res,"Cheng and Church, delta = 0.05, alpha = 1, number = 100", dimnames(y)[1][[1]], dimnames(y)[2][[1]])
 }
 

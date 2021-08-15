@@ -1,0 +1,26 @@
+,Adjusted p-value,Combined Score,Cluster
+cytokine-mediated signaling pathway (GO:0019221),9.36E-44,869.33,2
+defense response to virus (GO:0051607),9.30E-31,1396.78,2
+defense response to symbiont (GO:0140546),9.30E-31,1498.91,2
+cellular response to cytokine stimulus (GO:0071345),3.66E-28,483.06,2
+negative regulation of viral process (GO:0048525),2.57E-26,1907.45,2
+negative regulation of viral genome replication (GO:0045071),8.48E-23,1896.45,2
+cellular response to type I interferon (GO:0071357),7.48E-22,1405.26,2
+type I interferon signaling pathway (GO:0060337),7.48E-22,1405.26,2
+regulation of viral genome replication (GO:0045069),9.17E-19,1016.38,2
+negative regulation of cytokine production (GO:0001818),5.62E-17,386.62,2
+cellular response to interferon-gamma (GO:0071346),2.10E-16,485.61,2
+secondary alcohol biosynthetic process (GO:1902653),7.95E-16,1990.21,0
+cholesterol biosynthetic process (GO:0006695),7.95E-16,1858.91,0
+sterol biosynthetic process (GO:0016126),2.75E-15,1541.71,0
+inflammatory response (GO:0006954),1.13E-14,262.99,2
+positive regulation of cytokine production (GO:0001819),1.13E-14,212.02,2
+regulation of inflammatory response (GO:0050727),1.74E-14,274.91,2
+cellular response to lipopolysaccharide (GO:0071222),1.67E-12,310.84,2
+positive regulation of intracellular signal transduction (GO:1902533),3.71E-12,125.97,2
+response to cytokine (GO:0034097),3.29E-11,224.95,2
+response to interferon-gamma (GO:0034341),3.31E-11,346.61,2
+positive regulation of response to external stimulus (GO:0032103),4.03E-11,231.87,2
+cellular response to molecule of bacterial origin (GO:0071219),4.35E-11,260.95,2
+interferon-gamma-mediated signaling pathway (GO:0060333),2.15E-10,344.05,2
+cholesterol metabolic process (GO:0008203),6.40E-10,379.65,0

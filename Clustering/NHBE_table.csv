@@ -1,0 +1,26 @@
+,Adjusted p-value,Combined Score,Cluster
+cytokine-mediated signaling pathway (GO:0019221),2.38E-24,638.32,0
+cellular response to type I interferon (GO:0071357),8.55E-16,1478.49,0
+type I interferon signaling pathway (GO:0060337),8.55E-16,1478.49,0
+defense response to symbiont (GO:0140546),1.88E-12,580.98,0
+defense response to virus (GO:0051607),4.96E-12,516.27,0
+inflammatory response (GO:0006954),3.21E-11,317.76,0
+innate immune response (GO:0045087),5.79E-11,257.65,0
+negative regulation of viral genome replication (GO:0045071),7.96E-10,722.58,0
+cellular response to cytokine stimulus (GO:0071345),1.87E-09,157.69,0
+response to cytokine (GO:0034097),3.44E-09,298.86,0
+response to lipopolysaccharide (GO:0032496),6.64E-09,270.50,0
+regulation of viral genome replication (GO:0045069),6.64E-09,502.04,0
+negative regulation of viral process (GO:0048525),9.68E-09,466.52,0
+regulation of lipid storage (GO:0010883),1.36E-07,1011.89,0
+neutrophil chemotaxis (GO:0030593),1.65E-07,361.77,0
+regulation of inflammatory response (GO:0050727),1.91E-07,172.26,0
+cellular response to lipopolysaccharide (GO:0071222),2.10E-07,238.35,0
+granulocyte chemotaxis (GO:0071621),2.10E-07,337.32,0
+positive regulation of DNA-binding transcription factor activity (GO:0051091),2.34E-07,150.25,0
+positive regulation of defense response (GO:0031349),2.57E-07,265.66,0
+neutrophil migration (GO:1990266),3.07E-07,308.60,0
+response to interferon-beta (GO:0035456),5.73E-07,656.32,0
+positive regulation of response to external stimulus (GO:0032103),8.70E-07,185.40,0
+positive regulation of inflammatory response (GO:0050729),1.13E-06,242.23,0
+cellular response to molecule of bacterial origin (GO:0071219),1.13E-06,202.74,0
