@@ -6,7 +6,8 @@ import scipy.cluster.hierarchy as sch
 from sklearn.cluster import AgglomerativeClustering
 import re
 
-__dataInterpreter_base_dir = 'C:\\Users\\Pedro\\Documents\\MasterThesis\\'
+#__dataInterpreter_base_dir = 'C:\\Users\\Pedro\\Documents\\MasterThesis\\'
+__dataInterpreter_base_dir = '/Users/pedrorodrigues/Documents/GitHub/Analysis-of-regulatory-response-to-SARS-CoV-2-infection/'
 
 __dataInterpreter_data_map = {
     'NHBE': {

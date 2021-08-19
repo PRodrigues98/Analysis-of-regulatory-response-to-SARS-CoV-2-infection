@@ -1,26 +1,26 @@
-,Adjusted p-value,Combined Score,Cluster
+,p-value,Score,Cluster
+positive regulation of heat generation (GO:0031652),8.32E-03,3921.08,0
+regulation of fever generation (GO:0031620),8.32E-03,3921.08,0
+positive regulation of fever generation (GO:0031622),8.32E-03,2825.38,0
+regulation of vascular wound healing (GO:0061043),8.32E-03,1765.21,0
+positive regulation of steroid biosynthetic process (GO:0010893),8.32E-03,1765.21,0
 aerobic electron transport chain (GO:0019646),3.06E-20,833.55,2
 mitochondrial ATP synthesis coupled electron transport (GO:0042775),3.06E-20,801.88,2
 "mitochondrial electron transport, NADH to ubiquinone (GO:0006120)",2.72E-13,692.38,2
+L-phenylalanine catabolic process (GO:0006559),4.28E-03,637.69,2
+erythrose 4-phosphate/phosphoenolpyruvate family amino acid catabolic process (GO:1902222),4.28E-03,637.69,2
+ribose phosphate metabolic process (GO:0019693),4.28E-03,637.69,2
+quinone catabolic process (GO:1901662),4.28E-03,637.69,2
+cellular glucuronidation (GO:0052695),9.25E-03,426.04,1
+acyl-CoA biosynthetic process (GO:0071616),2.56E-05,292.54,2
+acetyl-CoA biosynthetic process (GO:0006085),7.63E-04,291.06,2
 NADH dehydrogenase complex assembly (GO:0010257),3.07E-10,286.82,2
 mitochondrial respiratory chain complex I assembly (GO:0032981),3.07E-10,286.82,2
 mitochondrial respiratory chain complex assembly (GO:0033108),4.09E-10,198.40,2
-mitochondrial translational elongation (GO:0070125),4.24E-07,119.29,2
-translational elongation (GO:0006414),4.24E-07,108.52,2
-mitochondrial translation (GO:0032543),2.37E-06,92.48,2
+L-phenylalanine metabolic process (GO:0006558),5.27E-03,194.75,2
 secondary alcohol biosynthetic process (GO:1902653),8.13E-06,177.46,2
-translational termination (GO:0006415),8.13E-06,85.80,2
-mitochondrial translational termination (GO:0070126),8.68E-06,88.15,2
+"mitochondrial electron transport, ubiquinol to cytochrome c (GO:0006122)",2.48E-03,171.57,2
 cholesterol biosynthetic process (GO:0006695),1.04E-05,165.42,2
-translation (GO:0006412),2.36E-05,50.60,2
-acyl-CoA biosynthetic process (GO:0071616),2.56E-05,292.54,2
-sterol biosynthetic process (GO:0016126),2.56E-05,135.90,2
-neutrophil degranulation (GO:0043312),2.56E-05,36.51,2
-neutrophil activation involved in immune response (GO:0002283),3.09E-05,35.52,2
-cellular amino acid catabolic process (GO:0009063),3.38E-05,72.95,2
-neutrophil mediated immunity (GO:0002446),3.43E-05,34.79,2
-cellular protein metabolic process (GO:0044267),1.75E-04,31.21,2
-fatty acid beta-oxidation (GO:0006635),1.75E-04,82.96,2
-cholesterol metabolic process (GO:0008203),2.55E-04,61.93,2
-fatty-acyl-CoA metabolic process (GO:0035337),2.74E-04,148.92,2
 heme biosynthetic process (GO:0006783),2.74E-04,148.92,2
+fatty-acyl-CoA metabolic process (GO:0035337),2.74E-04,148.92,2
+sterol biosynthetic process (GO:0016126),2.56E-05,135.90,2

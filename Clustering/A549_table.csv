@@ -1,26 +1,26 @@
-,Adjusted p-value,Combined Score,Cluster
-L-arginine import across plasma membrane (GO:0097638),2.69E-02,2638.91,1
-serotonin transport (GO:0006837),2.69E-02,2638.91,1
-serotonin uptake (GO:0051610),2.69E-02,2638.91,1
-sialic acid transport (GO:0015739),2.69E-02,2638.91,1
-amine transport (GO:0015837),2.69E-02,2638.91,1
-norepinephrine transport (GO:0015874),2.69E-02,2044.88,1
-L-arginine transmembrane transport (GO:1903400),2.69E-02,2044.88,1
-choline transport (GO:0015871),2.69E-02,2044.88,1
-xenobiotic transport across blood-brain barrier (GO:1990962),2.69E-02,2044.88,1
-type I interferon signaling pathway (GO:0060337),8.52E-17,1846.63,2
-cellular response to type I interferon (GO:0071357),8.52E-17,1846.63,2
-catecholamine uptake (GO:0090493),2.69E-02,1657.40,1
-sphingosine-1-phosphate receptor signaling pathway (GO:0003376),2.69E-02,1657.40,1
-dopamine transport (GO:0015872),2.69E-02,1657.40,1
-neurotransmitter reuptake (GO:0098810),2.69E-02,1385.98,1
-dopamine uptake (GO:0090494),2.69E-02,1385.98,1
-cytoplasmic pattern recognition receptor signaling pathway in response to virus (GO:0039528),8.77E-05,1115.92,2
-toxin transport (GO:1901998),3.17E-02,1032.95,1
-complement receptor mediated signaling pathway (GO:0002430),3.29E-02,912.35,1
-negative regulation of viral genome replication (GO:0045071),1.34E-10,900.66,2
-defense response to symbiont (GO:0140546),5.17E-15,863.17,2
-neurotransmitter uptake (GO:0001504),3.40E-02,815.05,1
-defense response to virus (GO:0051607),1.50E-14,768.74,2
-negative regulation of viral process (GO:0048525),1.22E-10,738.96,2
-neurotransmitter biosynthetic process (GO:0042136),3.59E-02,668.13,1
+,p-value,Score,Cluster
+cellular response to type I interferon (GO:0071357),2.23E-15,1540.94,2
+type I interferon signaling pathway (GO:0060337),2.23E-15,1540.94,2
+negative regulation of viral genome replication (GO:0045071),3.07E-09,792.37,2
+response to interferon-beta (GO:0035456),4.98E-05,637.94,2
+negative regulation of viral life cycle (GO:1903901),1.99E-08,569.74,2
+regulation of viral genome replication (GO:0045069),2.32E-08,540.29,2
+regulation of interferon-alpha production (GO:0032647),6.90E-04,472.38,2
+positive regulation of interferon-alpha production (GO:0032727),1.26E-03,354.12,2
+interferon-gamma-mediated signaling pathway (GO:0060333),1.05E-06,344.39,2
+cytokine-mediated signaling pathway (GO:0019221),2.23E-15,327.50,2
+cellular response to interferon-gamma (GO:0071346),4.59E-08,321.58,2
+positive regulation of defense response to virus by host (GO:0002230),1.81E-03,300.45,2
+STAT cascade (GO:0097696),9.26E-04,211.79,0
+chemokine-mediated signaling pathway (GO:0070098),4.73E-04,195.27,2
+response to interferon-gamma (GO:0034341),1.78E-04,187.71,2
+regulation of leukocyte chemotaxis (GO:0002688),5.77E-03,169.19,2
+regulation of defense response to virus by host (GO:0050691),5.77E-03,169.19,2
+negative regulation of type I interferon production (GO:0032480),2.18E-03,160.73,2
+response to cytokine (GO:0034097),3.49E-05,147.64,2
+positive regulation of JAK-STAT cascade (GO:0046427),1.26E-03,139.37,2
+regulation of type I interferon production (GO:0032479),6.82E-04,130.07,2
+neutrophil migration (GO:1990266),6.25E-03,102.79,2
+JAK-STAT cascade (GO:0007259),4.73E-03,95.44,0
+positive regulation of leukocyte chemotaxis (GO:0002690),7.10E-03,94.66,2
+positive regulation of type I interferon production (GO:0032481),7.40E-03,92.17,2
