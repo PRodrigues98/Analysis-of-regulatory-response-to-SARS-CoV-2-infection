@@ -6,8 +6,8 @@ import scipy.cluster.hierarchy as sch
 from sklearn.cluster import AgglomerativeClustering
 import re
 
-#__dataInterpreter_base_dir = 'C:\\Users\\Pedro\\Documents\\MasterThesis\\'
-__dataInterpreter_base_dir = '/Users/pedrorodrigues/Documents/GitHub/Analysis-of-regulatory-response-to-SARS-CoV-2-infection/'
+__dataInterpreter_base_dir = 'C:\\Users\\Pedro\\Documents\\MasterThesis\\'
+#__dataInterpreter_base_dir = '/Users/pedrorodrigues/Documents/GitHub/Analysis-of-regulatory-response-to-SARS-CoV-2-infection/'
 
 __dataInterpreter_data_map = {
     'NHBE': {
@@ -227,6 +227,30 @@ def plot_dendrogram(data, title = 'Dendrogram', xLabel = 'Genes', yLabel = 'Dist
     plt.ylabel(yLabel)
     plt.show()
     return fig
+
+
+def get_info_from_name(col_name):
+    result = {}
+    info = col_name.split('_')
+    result['Series'] = info[0]
+    
+    if info[1] == 'COVID19Lung':
+        result['Cell Type'] = 'Biopsy'
+        result['Condition'] = 'SARS-CoV-2'
+        return result
+    elif info[1] == 'HealthyLungBiopsy':
+        result['Cell Type'] = 'Biopsy'
+        result['Condition'] = 'Healthy'
+        return result
+        
+    result['Cell Type'] = info[1]
+    
+    if info[2] == 'Mock':
+        result['Condition'] = 'Healthy'
+    else:
+        result['Condition'] = info[2].replace('.', '-')
+    
+    return result
 
     
 

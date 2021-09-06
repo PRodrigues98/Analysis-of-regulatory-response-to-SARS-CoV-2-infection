@@ -1,0 +1,26 @@
+,p-value,Score,Cluster
+Measles (\href{https://www.kegg.jp/entry/map05162}{map05162}),1.02E-08,295.14,2
+Influenza A (\href{https://www.kegg.jp/entry/map05164}{map05164}),1.02E-08,252.18,2
+Herpes simplex virus 1 infection (\href{https://www.kegg.jp/entry/map05168}{map05168}),7.16E-10,177.20,2
+Epstein-Barr virus infection (\href{https://www.kegg.jp/entry/map05169}{map05169}),4.82E-07,156.14,2
+TNF signaling pathway (\href{https://www.kegg.jp/entry/map04668}{map04668}),1.11E-07,153.86,0
+Coronavirus disease (\href{https://www.kegg.jp/entry/map05171}{map05171}),3.78E-07,150.32,2
+RIG-I-like receptor signaling pathway (\href{https://www.kegg.jp/entry/map04622}{map04622}),3.68E-04,120.34,2
+NOD-like receptor signaling pathway (\href{https://www.kegg.jp/entry/map04621}{map04621}),9.37E-06,119.63,2
+Legionellosis (\href{https://www.kegg.jp/entry/map05134}{map05134}),1.77E-05,118.99,0
+Hepatitis C (\href{https://www.kegg.jp/entry/map05160}{map05160}),1.79E-05,118.31,2
+TNF signaling pathway (\href{https://www.kegg.jp/entry/map04668}{map04668}),8.61E-05,116.25,2
+Primary immunodeficiency (\href{https://www.kegg.jp/entry/map05340}{map05340}),2.17E-03,116.00,2
+Allograft rejection (\href{https://www.kegg.jp/entry/map05330}{map05330}),2.17E-03,116.00,2
+Amoebiasis (\href{https://www.kegg.jp/entry/map05146}{map05146}),2.13E-06,111.38,0
+African trypanosomiasis (\href{https://www.kegg.jp/entry/map05143}{map05143}),1.50E-04,111.14,0
+Rheumatoid arthritis (\href{https://www.kegg.jp/entry/map05323}{map05323}),3.12E-06,110.93,0
+Legionellosis (\href{https://www.kegg.jp/entry/map05134}{map05134}),1.12E-03,105.75,2
+Antigen processing and presentation (\href{https://www.kegg.jp/entry/map04612}{map04612}),5.58E-04,100.66,2
+JAK-STAT signaling pathway (\href{https://www.kegg.jp/entry/map04630}{map04630}),1.07E-06,96.92,0
+NF-kappa B signaling pathway (\href{https://www.kegg.jp/entry/map04064}{map04064}),3.68E-04,92.76,2
+Kaposi sarcoma-associated herpesvirus infection (\href{https://www.kegg.jp/entry/map05167}{map05167}),8.97E-05,82.21,2
+Insulin resistance (\href{https://www.kegg.jp/entry/map04931}{map04931}),1.68E-05,81.67,0
+AGE-RAGE signaling pathway in diabetic complications (\href{https://www.kegg.jp/entry/map04933}{map04933}),2.87E-05,77.90,0
+IL-17 signaling pathway (\href{https://www.kegg.jp/entry/map04657}{map04657}),1.29E-03,73.62,2
+Type II diabetes mellitus (\href{https://www.kegg.jp/entry/map04930}{map04930}),5.14E-04,72.61,0
