@@ -1,5 +1,22 @@
 ,p-value,Score
-regulation of transcription by RNA polymerase II (GO:0006357),2.14E-19,830.44
-"regulation of transcription, DNA-templated (GO:0006355)",2.14E-19,805.00
-negative regulation of transcription by RNA polymerase II (GO:0000122),3.42E-05,113.78
-"negative regulation of transcription, DNA-templated (GO:0045892)",5.85E-04,62.70
+RIG-I signaling pathway (GO:0039529),2.01E-02,819.47
+positive regulation of dendritic cell cytokine production (GO:0002732),2.08E-02,658.60
+cytoplasmic pattern recognition receptor signaling pathway in response to virus (GO:0039528),3.15E-02,463.95
+positive regulation of epidermal growth factor-activated receptor activity (GO:0045741),3.65E-02,401.14
+positive regulation of vascular endothelial growth factor production (GO:0010575),1.52E-02,314.50
+regulation of vascular endothelial growth factor production (GO:0010574),1.52E-02,280.69
+positive regulation of nuclear division (GO:0051785),1.52E-02,280.69
+positive regulation of defense response to virus by host (GO:0002230),1.52E-02,266.02
+response to interferon-beta (GO:0035456),1.52E-02,266.02
+regulation of interleukin-2 production (GO:0032663),1.52E-02,240.53
+regulation of defense response to virus by host (GO:0050691),2.02E-02,183.70
+positive regulation of mitotic nuclear division (GO:0045840),2.02E-02,183.70
+positive regulation of interleukin-6 production (GO:0032755),1.75E-02,120.65
+regulation of protein localization to plasma membrane (GO:1903076),1.97E-02,111.57
+defense response to symbiont (GO:0140546),1.52E-02,98.43
+defense response to virus (GO:0051607),1.52E-02,88.09
+negative regulation of cytokine production (GO:0001818),1.52E-02,84.74
+regulation of interleukin-6 production (GO:0032675),4.07E-02,68.02
+cellular response to cytokine stimulus (GO:0071345),1.52E-02,63.15
+positive regulation of cytokine production (GO:0001819),2.02E-02,45.00
+cytokine-mediated signaling pathway (GO:0019221),1.52E-02,38.92

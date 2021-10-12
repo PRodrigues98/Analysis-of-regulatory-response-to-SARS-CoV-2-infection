@@ -5,8 +5,11 @@ import scipy.stats
 import scipy.cluster.hierarchy as sch
 from sklearn.cluster import AgglomerativeClustering
 import re
+from sklearn.model_selection import LeaveOneOut
+from sklearn.metrics import accuracy_score
 
-__dataInterpreter_base_dir = 'C:\\Users\\Pedro\\Documents\\MasterThesis\\'
+__dataInterpreter_base_dir = 'C:\\Users\\Work\\Desktop\\MasterThesis\\'
+#__dataInterpreter_base_dir = 'C:\\Users\\Pedro\\Documents\\MasterThesis\\'
 #__dataInterpreter_base_dir = '/Users/pedrorodrigues/Documents/GitHub/Analysis-of-regulatory-response-to-SARS-CoV-2-infection/'
 
 __dataInterpreter_data_map = {
@@ -251,6 +254,41 @@ def get_info_from_name(col_name):
         result['Condition'] = info[2].replace('.', '-')
     
     return result
+
+
+def apply_loocv(X, y, model):
+    cv = LeaveOneOut()
+
+    # enumerate splits
+    y_true, y_pred = list(), list()
+    
+    importances = np.zeros(X.shape[1])
+    rounds = 0
+
+    for train_ix, test_ix in cv.split(X):
+        # split data
+        X_train, X_test = X[train_ix, :], X[test_ix, :]
+        y_train, y_test = y[train_ix], y[test_ix]
+
+        # fit model
+        model.fit(X_train, y_train)
+        
+        importances += model.feature_importances_
+        rounds += 1
+
+        # evaluate model
+        yhat = model.predict(X_test)
+
+        # store
+        y_true.append(y_test[0])
+        y_pred.append(yhat[0])
+
+
+    # calculate accuracy
+    acc = accuracy_score(y_true, y_pred)
+    return {'accuracy': acc, 'importances': importances / rounds}
+    
+    
 
     
 

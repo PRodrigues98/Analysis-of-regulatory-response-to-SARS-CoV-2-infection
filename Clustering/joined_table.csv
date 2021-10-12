@@ -1,0 +1,26 @@
+,p-value,Score,Cluster
+type I interferon signaling pathway (GO:0060337),4.40E-27,9111.11,2
+cellular response to type I interferon (GO:0071357),4.40E-27,9111.11,2
+negative regulation of viral genome replication (GO:0045071),1.10E-16,3820.31,2
+defense response to symbiont (GO:0140546),7.74E-22,3260.22,2
+cytoplasmic pattern recognition receptor signaling pathway in response to virus (GO:0039528),1.74E-06,3253.53,2
+negative regulation of viral process (GO:0048525),5.16E-17,3163.10,2
+defense response to virus (GO:0051607),2.34E-21,2930.10,2
+"antigen processing and presentation of endogenous peptide antigen via MHC class I via ER pathway, TAP-independent (GO:0002486)",4.42E-05,2797.75,2
+antigen processing and presentation of endogenous peptide antigen via MHC class I via ER pathway (GO:0002484),4.42E-05,2797.75,2
+regulation of viral genome replication (GO:0045069),1.64E-15,2717.94,2
+interferon-gamma-mediated signaling pathway (GO:0060333),1.79E-15,2656.13,2
+protein mono-ADP-ribosylation (GO:0140289),3.35E-06,2318.71,2
+"antigen processing and presentation of exogenous peptide antigen via MHC class I, TAP-independent (GO:0002480)",6.69E-05,2159.41,2
+cellular response to interferon-gamma (GO:0071346),5.16E-17,2028.44,2
+negative regulation of lipid localization (GO:1905953),8.90E-05,1742.91,2
+response to interferon-beta (GO:0035456),6.88E-08,1678.71,2
+regulation of ribonuclease activity (GO:0060700),1.81E-03,1644.95,2
+positive regulation of glial cell proliferation (GO:0060252),1.81E-03,1644.95,2
+interleukin-27-mediated signaling pathway (GO:0070106),7.76E-06,1582.01,2
+cytokine-mediated signaling pathway (GO:0019221),6.11E-25,1457.27,2
+protein poly-ADP-ribosylation (GO:0070212),1.23E-04,1451.28,2
+positive regulation of natural killer cell proliferation (GO:0032819),5.80E-03,1445.70,7
+regulation of mononuclear cell proliferation (GO:0032944),5.80E-03,1445.70,7
+regulation of NK T cell proliferation (GO:0051140),5.80E-03,1445.70,7
+positive regulation of mononuclear cell proliferation (GO:0032946),5.80E-03,1445.70,7

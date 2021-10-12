@@ -1,0 +1,26 @@
+,p-value,c-score
+cellular response to type I interferon (GO:0071357),2.35E-10,324.03
+type I interferon signaling pathway (GO:0060337),2.35E-10,324.03
+cytokine-mediated signaling pathway (GO:0019221),3.80E-26,319.38
+protein mono-ADP-ribosylation (GO:0140289),3.22E-04,319.17
+receptor signaling pathway via STAT (GO:0097696),2.73E-06,299.82
+receptor signaling pathway via JAK-STAT (GO:0007259),2.50E-06,250.15
+"antigen processing and presentation of exogenous peptide antigen via MHC class I, TAP-independent (GO:0002480)",7.04E-03,219.44
+negative regulation of bone remodeling (GO:0046851),2.62E-03,212.68
+interferon-gamma-mediated signaling pathway (GO:0060333),3.48E-08,211.38
+cellular response to interferon-gamma (GO:0071346),5.98E-10,192.56
+cellular response to cytokine stimulus (GO:0071345),6.64E-16,177.02
+negative regulation of bone resorption (GO:0045779),9.92E-03,164.52
+positive regulation of tyrosine phosphorylation of STAT protein (GO:0042531),1.39E-06,163.05
+negative regulation of viral genome replication (GO:0045071),2.50E-06,159.30
+positive regulation of defense response (GO:0031349),6.15E-08,155.70
+regulation of tyrosine phosphorylation of STAT protein (GO:0042509),1.39E-06,146.93
+defense response to symbiont (GO:0140546),3.48E-08,141.92
+negative regulation of viral process (GO:0048525),2.02E-06,138.13
+response to interferon-gamma (GO:0034341),2.11E-06,125.13
+defense response to virus (GO:0051607),1.19E-07,121.67
+response to interferon-beta (GO:0035456),8.82E-04,116.74
+interleukin-7-mediated signaling pathway (GO:0038111),3.67E-03,111.23
+cellular response to interleukin-7 (GO:0098761),3.67E-03,111.23
+positive regulation of response to external stimulus (GO:0032103),2.73E-07,110.34
+protein kinase B signaling (GO:0043491),2.10E-03,108.05

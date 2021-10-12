@@ -1,0 +1,216 @@
+,p-value,Score,Cluster
+type I interferon signaling pathway (GO:0060337),4.40E-27,9111.11,2
+cellular response to type I interferon (GO:0071357),4.40E-27,9111.11,2
+negative regulation of viral genome replication (GO:0045071),1.10E-16,3820.31,2
+defense response to symbiont (GO:0140546),7.74E-22,3260.22,2
+cytoplasmic pattern recognition receptor signaling pathway in response to virus (GO:0039528),1.74E-06,3253.53,2
+negative regulation of viral process (GO:0048525),5.16E-17,3163.10,2
+defense response to virus (GO:0051607),2.34E-21,2930.10,2
+"antigen processing and presentation of endogenous peptide antigen via MHC class I via ER pathway, TAP-independent (GO:0002486)",4.42E-05,2797.75,2
+antigen processing and presentation of endogenous peptide antigen via MHC class I via ER pathway (GO:0002484),4.42E-05,2797.75,2
+regulation of viral genome replication (GO:0045069),1.64E-15,2717.94,2
+interferon-gamma-mediated signaling pathway (GO:0060333),1.79E-15,2656.13,2
+protein mono-ADP-ribosylation (GO:0140289),3.35E-06,2318.71,2
+"antigen processing and presentation of exogenous peptide antigen via MHC class I, TAP-independent (GO:0002480)",6.69E-05,2159.41,2
+cellular response to interferon-gamma (GO:0071346),5.16E-17,2028.44,2
+negative regulation of lipid localization (GO:1905953),8.90E-05,1742.91,2
+response to interferon-beta (GO:0035456),6.88E-08,1678.71,2
+regulation of ribonuclease activity (GO:0060700),1.81E-03,1644.95,2
+positive regulation of glial cell proliferation (GO:0060252),1.81E-03,1644.95,2
+interleukin-27-mediated signaling pathway (GO:0070106),7.76E-06,1582.01,2
+cytokine-mediated signaling pathway (GO:0019221),6.11E-25,1457.27,2
+protein poly-ADP-ribosylation (GO:0070212),1.23E-04,1451.28,2
+positive regulation of natural killer cell proliferation (GO:0032819),5.80E-03,1445.70,7
+regulation of mononuclear cell proliferation (GO:0032944),5.80E-03,1445.70,7
+regulation of NK T cell proliferation (GO:0051140),5.80E-03,1445.70,7
+positive regulation of mononuclear cell proliferation (GO:0032946),5.80E-03,1445.70,7
+positive regulation of cell fate commitment (GO:0010455),5.80E-03,1445.70,7
+detection of virus (GO:0009597),2.34E-03,1177.89,2
+regulation of nuclease activity (GO:0032069),2.34E-03,1177.89,2
+positive regulation of I-kappaB phosphorylation (GO:1903721),2.34E-03,1177.89,2
+ISG15-protein conjugation (GO:0032020),2.34E-03,1177.89,2
+regulation of smooth muscle cell proliferation (GO:0048660),5.49E-08,1055.64,2
+regulation of T-helper 17 cell lineage commitment (GO:2000328),7.78E-03,1034.09,7
+morphogenesis of an endothelium (GO:0003159),7.78E-03,1034.09,7
+regulation of NK T cell activation (GO:0051133),7.78E-03,1034.09,7
+positive regulation of interferon-alpha production (GO:0032727),2.30E-05,998.27,2
+RIG-I signaling pathway (GO:0039529),2.91E-03,905.29,2
+positive regulation of gliogenesis (GO:0014015),2.91E-03,905.29,2
+regulation of I-kappaB phosphorylation (GO:1903719),2.91E-03,905.29,2
+positive regulation of response to biotic stimulus (GO:0002833),8.94E-07,810.09,2
+positive regulation of activation of Janus kinase activity (GO:0010536),8.98E-03,793.99,7
+positive regulation of NK T cell activation (GO:0051135),8.98E-03,793.99,7
+positive regulation of T-helper 17 cell differentiation (GO:2000321),8.98E-03,793.99,7
+regulation of natural killer cell proliferation (GO:0032817),8.98E-03,793.99,7
+positive regulation of smooth muscle cell proliferation (GO:0048661),9.71E-07,783.80,2
+positive regulation of response to cytokine stimulus (GO:0060760),3.94E-04,753.85,2
+cellular response to virus (GO:0098586),6.72E-06,746.37,2
+positive regulation of homotypic cell-cell adhesion (GO:0034112),3.63E-03,728.06,2
+positive regulation of interferon-beta production (GO:0032728),7.30E-06,715.44,2
+regulation of interferon-alpha production (GO:0032647),5.25E-05,709.18,2
+regulation of innate immune response (GO:0045088),2.46E-07,706.80,2
+positive regulation of osteoclast differentiation (GO:0045672),1.91E-03,657.81,7
+regulation of activation of Janus kinase activity (GO:0010533),9.98E-03,637.98,7
+response to type I interferon (GO:0034340),4.50E-03,604.35,2
+regulation of glial cell proliferation (GO:0060251),4.50E-03,604.35,2
+positive regulation of chromatin binding (GO:0035563),4.50E-03,604.35,2
+positive regulation of defense response to virus by host (GO:0002230),8.05E-05,598.01,2
+positive regulation of alpha-beta T cell proliferation (GO:0046641),2.19E-03,595.28,7
+response to interferon-alpha (GO:0035455),6.68E-04,570.67,2
+regulation of response to biotic stimulus (GO:0002831),8.75E-05,567.44,2
+protein ADP-ribosylation (GO:0006471),8.75E-05,567.44,2
+negative regulation of type I interferon production (GO:0032480),1.62E-05,548.65,2
+positive regulation of tyrosine phosphorylation of STAT protein (GO:0042531),3.35E-06,540.44,2
+regulation of RIG-I signaling pathway (GO:0039535),7.67E-04,526.08,2
+positive regulation of RIG-I signaling pathway (GO:1900246),5.26E-03,513.51,2
+response to interferon-gamma (GO:0034341),9.71E-07,506.41,2
+negative regulation of lipid storage (GO:0010888),8.73E-04,487.20,2
+cellular response to interferon-beta (GO:0035458),8.73E-04,487.20,2
+antigen processing and presentation of peptide antigen via MHC class I (GO:0002474),1.38E-04,468.19,2
+cellular response to chemokine (GO:1990869),3.79E-05,453.46,7
+regulation of interferon-beta production (GO:0032648),2.85E-05,451.87,2
+positive regulation of epidermal growth factor-activated receptor activity (GO:0045741),6.13E-03,444.24,2
+interleukin-35-mediated signaling pathway (GO:0070757),6.13E-03,444.24,2
+response to corticosteroid (GO:0031960),6.13E-03,444.24,2
+regulation of tyrosine phosphorylation of STAT protein (GO:0042509),6.89E-06,437.43,2
+regulation of type I interferon production (GO:0032479),1.79E-06,431.72,2
+positive regulation of alpha-beta T cell activation (GO:0046635),3.66E-03,424.05,7
+regulation of response to cytokine stimulus (GO:0060759),1.12E-03,422.79,2
+regulation of lipid storage (GO:0010883),1.12E-03,422.79,2
+positive regulation of response to external stimulus (GO:0032103),1.57E-07,420.36,2
+positive regulation of innate immune response (GO:0045089),1.86E-04,411.59,2
+regulation of defense response to virus by host (GO:0050691),1.86E-04,411.59,2
+regulation of interferon-gamma-mediated signaling pathway (GO:0060334),1.25E-03,395.87,2
+positive regulation of neuroinflammatory response (GO:0150078),7.02E-03,389.84,2
+protein auto-ADP-ribosylation (GO:0070213),7.02E-03,389.84,2
+regulation of chromatin binding (GO:0035561),7.02E-03,389.84,2
+negative regulation of production of miRNAs involved in gene silencing by miRNA (GO:1903799),7.02E-03,389.84,2
+response to cytokine (GO:0034097),2.68E-07,374.27,2
+positive regulation of defense response (GO:0031349),3.35E-06,373.57,2
+negative regulation of cytokine production (GO:0001818),1.06E-07,366.91,2
+positive regulation of type I interferon production (GO:0032481),1.33E-05,363.39,2
+regulation of osteoclast differentiation (GO:0045670),1.34E-03,356.20,7
+receptor signaling pathway via STAT (GO:0097696),1.51E-03,350.06,2
+regulation of homotypic cell-cell adhesion (GO:0034110),7.99E-03,346.10,2
+regulation of leukocyte adhesion to vascular endothelial cell (GO:1904994),7.99E-03,346.10,2
+positive regulation of T cell mediated cytotoxicity (GO:0001916),1.67E-03,330.43,2
+regulation of chemokine production (GO:0032642),3.30E-04,327.80,2
+chemokine-mediated signaling pathway (GO:0070098),6.08E-04,319.12,7
+regulation of interleukin-6 production (GO:0032675),6.45E-06,313.81,2
+regulation of toll-like receptor signaling pathway (GO:0034121),1.81E-03,312.62,2
+antiviral innate immune response (GO:0140374),8.81E-03,310.25,2
+regulation of response to interferon-gamma (GO:0060330),8.81E-03,310.25,2
+NAD biosynthesis via nicotinamide riboside salvage pathway (GO:0034356),8.81E-03,310.25,2
+antigen processing and presentation of endogenous peptide antigen (GO:0002483),8.81E-03,310.25,2
+receptor signaling pathway via STAT (GO:0097696),5.80E-03,303.99,7
+regulation of immune response (GO:0050776),1.03E-06,285.10,2
+regulation of T cell mediated cytotoxicity (GO:0001914),2.16E-03,281.51,2
+cellular response to exogenous dsRNA (GO:0071360),9.55E-03,280.38,2
+regulation of microglial cell activation (GO:1903978),9.55E-03,280.38,2
+positive regulation of acute inflammatory response (GO:0002675),9.55E-03,280.38,2
+regulation of lymphocyte activation (GO:0051249),9.55E-03,280.38,2
+positive regulation of natural killer cell activation (GO:0032816),9.55E-03,280.38,2
+acute-phase response (GO:0006953),9.55E-03,280.38,2
+positive regulation of pattern recognition receptor signaling pathway (GO:0062208),9.55E-03,280.38,2
+positive regulation of cell-cell adhesion (GO:0022409),4.86E-04,277.67,2
+regulation of cytokine production (GO:0001817),3.35E-06,275.49,2
+positive regulation of mononuclear cell migration (GO:0071677),2.34E-03,255.32,2
+receptor signaling pathway via JAK-STAT (GO:0007259),2.34E-03,255.32,2
+positive regulation of receptor signaling pathway via STAT (GO:1904894),2.50E-03,243.73,2
+positive regulation of interleukin-6 production (GO:0032755),1.86E-04,235.21,2
+positive regulation of receptor signaling pathway via JAK-STAT (GO:0046427),2.67E-03,232.99,2
+positive regulation of chemokine production (GO:0032722),7.60E-04,232.49,2
+positive regulation of peptidyl-tyrosine phosphorylation (GO:0050731),1.89E-05,232.26,2
+neutrophil chemotaxis (GO:0030593),1.32E-03,228.23,7
+positive regulation of epidermal growth factor receptor signaling pathway (GO:0045742),2.89E-03,223.03,2
+receptor signaling pathway via JAK-STAT (GO:0007259),8.33E-03,221.18,7
+granulocyte chemotaxis (GO:0071621),1.34E-03,214.21,7
+inflammatory response (GO:0006954),1.05E-05,213.67,7
+regulation of interleukin-12 production (GO:0032655),3.05E-03,212.02,7
+positive regulation of T cell mediated immunity (GO:0002711),3.18E-03,205.13,2
+positive regulation of cytokine-mediated signaling pathway (GO:0001961),3.18E-03,205.13,2
+macrophage activation (GO:0042116),3.18E-03,205.13,2
+neutrophil migration (GO:1990266),1.34E-03,197.59,7
+cellular response to cytokine stimulus (GO:0071345),1.57E-07,193.19,2
+positive regulation of interleukin-12 production (GO:0032735),8.98E-03,192.99,7
+epithelial tube morphogenesis (GO:0060562),8.98E-03,192.99,7
+positive regulation of intracellular signal transduction (GO:1902533),1.03E-07,190.81,2
+response to interferon-gamma (GO:0034341),1.48E-03,186.46,7
+positive regulation of inflammatory response (GO:0050729),3.68E-04,185.46,2
+positive regulation of lymphocyte activation (GO:0051251),9.53E-03,184.91,7
+cellular response to tumor necrosis factor (GO:0071356),1.79E-05,184.48,2
+response to tumor necrosis factor (GO:0034612),9.18E-04,180.81,7
+cytokine-mediated signaling pathway (GO:0019221),4.24E-07,179.76,7
+positive regulation of T cell mediated immunity (GO:0002711),9.85E-03,177.37,7
+positive regulation of myeloid leukocyte differentiation (GO:0002763),9.85E-03,177.37,7
+response to interleukin-1 (GO:0070555),1.91E-03,167.00,7
+translesion synthesis (GO:0019985),4.62E-03,163.63,2
+monocyte chemotaxis (GO:0002548),4.62E-03,163.63,2
+pattern recognition receptor signaling pathway (GO:0002221),5.25E-03,162.13,7
+cellular response to cytokine stimulus (GO:0071345),4.16E-06,158.44,7
+DNA synthesis involved in DNA repair (GO:0000731),4.84E-03,158.07,2
+positive regulation of leukocyte mediated cytotoxicity (GO:0001912),4.84E-03,158.07,2
+regulation of receptor signaling pathway via JAK-STAT (GO:0046425),5.40E-03,147.84,2
+"antigen processing and presentation of exogenous peptide antigen via MHC class I, TAP-dependent (GO:0002479)",2.07E-03,144.26,2
+postreplication repair (GO:0006301),5.72E-03,143.13,2
+regulation of cytokine-mediated signaling pathway (GO:0001959),2.15E-03,141.34,2
+regulation of DNA binding (GO:0051101),6.05E-03,138.66,2
+positive regulation of immune response (GO:0050778),2.19E-03,138.51,2
+positive regulation of lymphocyte proliferation (GO:0050671),2.19E-03,138.51,2
+positive regulation of cytokine production (GO:0001819),1.35E-05,138.31,2
+positive regulation of tumor necrosis factor production (GO:0032760),2.34E-03,133.12,2
+antigen processing and presentation of exogenous peptide antigen via MHC class I (GO:0042590),2.34E-03,130.55,2
+regulation of cellular component movement (GO:0051270),6.98E-03,126.54,2
+positive regulation of DNA-binding transcription factor activity (GO:0051091),8.35E-05,125.97,2
+regulation of NIK/NF-kappaB signaling (GO:1901222),2.50E-03,125.64,2
+positive regulation of NF-kappaB transcription factor activity (GO:0051092),4.26E-04,124.78,2
+positive regulation of tumor necrosis factor superfamily cytokine production (GO:1903557),2.57E-03,123.30,2
+innate immune response (GO:0045087),4.42E-05,123.29,2
+regulation of inflammatory response (GO:0050727),2.15E-04,118.12,2
+cellular response to molecule of bacterial origin (GO:0071219),6.17E-03,117.41,0
+positive regulation of NIK/NF-kappaB signaling (GO:1901224),7.93E-03,116.07,2
+positive regulation of angiogenesis (GO:0045766),6.17E-03,115.79,0
+positive regulation of leukocyte chemotaxis (GO:0002690),8.14E-03,112.89,2
+response to interleukin-1 (GO:0070555),3.00E-03,112.57,2
+regulation of tumor necrosis factor production (GO:0032680),1.43E-03,111.50,2
+collagen fibril organization (GO:0030199),9.87E-03,111.23,0
+negative regulation of cytokine-mediated signaling pathway (GO:0001960),8.47E-03,109.85,2
+negative regulation of cysteine-type endopeptidase activity involved in apoptotic process (GO:0043154),8.47E-03,109.85,2
+cellular response to tumor necrosis factor (GO:0071356),1.34E-03,109.44,7
+positive regulation of protein metabolic process (GO:0051247),5.25E-03,106.54,7
+positive regulation of binding (GO:0051099),3.41E-03,105.02,2
+regulation of phagocytosis (GO:0050764),9.44E-03,101.49,2
+cellular response to cytokine stimulus (GO:0071345),1.83E-04,101.45,0
+response to lipopolysaccharide (GO:0032496),2.80E-03,101.24,7
+response to organic cyclic compound (GO:0014070),9.84E-03,96.47,2
+negative regulation of cell population proliferation (GO:0008285),2.10E-04,83.77,2
+apoptotic process (GO:0006915),6.17E-03,78.44,0
+cellular response to interleukin-1 (GO:0071347),2.91E-03,78.35,2
+cytokine-mediated signaling pathway (GO:0019221),3.38E-04,77.19,0
+response to tumor necrosis factor (GO:0034612),6.20E-03,77.01,2
+positive regulation of protein kinase B signaling (GO:0051897),3.24E-03,73.70,2
+tumor necrosis factor-mediated signaling pathway (GO:0033209),7.24E-03,70.85,2
+regulation of I-kappaB kinase/NF-kappaB signaling (GO:0043122),2.28E-03,68.73,2
+regulation of cell population proliferation (GO:0042127),8.90E-05,67.57,2
+positive regulation of signal transduction (GO:0009967),8.19E-03,67.42,0
+positive regulation of I-kappaB kinase/NF-kappaB signaling (GO:0043123),4.17E-03,66.84,2
+regulation of inflammatory response (GO:0050727),9.87E-03,66.82,0
+cellular response to interleukin-1 (GO:0071347),9.88E-03,66.09,7
+apoptotic process (GO:0006915),2.45E-03,65.28,2
+regulation of protein secretion (GO:0050708),8.81E-03,62.95,2
+cellular response to lipid (GO:0071396),8.33E-03,59.70,7
+regulation of response to external stimulus (GO:0032101),9.55E-03,59.14,2
+positive regulation of cell population proliferation (GO:0008284),1.00E-03,56.17,2
+negative regulation of apoptotic process (GO:0043066),1.14E-03,53.85,2
+positive regulation of multicellular organismal process (GO:0051240),9.87E-03,53.04,0
+regulation of protein kinase B signaling (GO:0051896),7.99E-03,48.73,2
+positive regulation of cellular process (GO:0048522),1.43E-03,45.29,2
+regulation of apoptotic process (GO:0042981),1.28E-03,43.00,2
+negative regulation of programmed cell death (GO:0043069),4.72E-03,41.32,2
+negative regulation of cellular process (GO:0048523),2.58E-03,40.23,2
+positive regulation of cellular process (GO:0048522),9.87E-03,38.68,0
+negative regulation of gene expression (GO:0010629),9.00E-03,36.70,2
+positive regulation of nucleic acid-templated transcription (GO:1903508),5.25E-03,34.80,2
+"positive regulation of transcription, DNA-templated (GO:0045893)",1.43E-03,34.63,2
+positive regulation of transcription by RNA polymerase II (GO:0045944),4.52E-03,28.27,2
+regulation of transcription by RNA polymerase II (GO:0006357),1.51E-03,27.50,2

@@ -1,0 +1,21 @@
+,,Number of Biclusters,Average Number of Genes per Bicluster,Standard Deviation of Genes per Bicluster,Average Number of Conditions per Bicluster,Standard Deviation of Conditions per Bicluster,Average of Enriched Terms per Bicluster
+BicPAM,p-value < 0.01 (Mann-Whitney U test),80,208.03,18.54,3.16,0.53,28.91
+BicPAM,p-value < 0.05 (Mann-Whitney U test),79,3526.66,301.50,3.24,0.64,341.70
+BicPAM,"ANOVA, top 200 features",7,188.29,5.95,10.00,9.70,10.57
+BicPAM,"ANOVA, top 1000 features",20,676.05,29.13,5.00,4.22,55.75
+BicPAM,"ANOVA, top 5000 features",57,2106.18,128.36,3.61,1.25,131.32
+Cheng and Church,p-value < 0.01 (Mann-Whitney U test),50,15.60,12.59,12.92,5.90,3.46
+Cheng and Church,p-value < 0.05 (Mann-Whitney U test),100,55.90,16.23,34.79,9.96,1.68
+Cheng and Church,"ANOVA, top 200 features",8,25.00,23.49,21.38,12.56,6.50
+Cheng and Church,"ANOVA, top 1000 features",56,17.86,15.27,17.89,10.67,4.41
+Cheng and Church,"ANOVA, top 5000 features",100,34.54,24.10,22.76,11.25,2.47
+Plaid,p-value < 0.01 (Mann-Whitney U test),10,64.70,55.53,14.20,5.60,29.90
+Plaid,p-value < 0.05 (Mann-Whitney U test),10,776.40,922.43,11.60,6.89,24.10
+Plaid,"ANOVA, top 200 features",8,44.00,30.76,12.88,8.43,9.88
+Plaid,"ANOVA, top 1000 features",10,159.50,100.72,12.20,7.29,18.70
+Plaid,"ANOVA, top 5000 features",10,739.20,530.04,13.10,7.48,43.40
+xMotifs,p-value < 0.01 (Mann-Whitney U test),10,31.90,17.17,8.20,2.86,1.70
+xMotifs,p-value < 0.05 (Mann-Whitney U test),10,654.50,365.82,6.00,0.00,6.30
+xMotifs,"ANOVA, top 200 features",6,30.33,34.30,24.50,9.73,10.67
+xMotifs,"ANOVA, top 1000 features",10,71.90,103.54,11.10,4.28,7.60
+xMotifs,"ANOVA, top 5000 features",10,326.00,538.95,6.20,0.60,5.30
