@@ -1,0 +1,27 @@
+,NHBE IAVdNS1,NHBE IAVdNS1,NHBE IAVdNS1
+,count,p-value,c-score
+extracellular matrix organization (GO:0030198),0.84,3.31E-08,1.70E+02
+cardiac muscle tissue development (GO:0048738),0.80,4.78E-03,3.00E+02
+inflammatory response (GO:0006954),1.00,3.90E-04,2.71E+02
+dendritic cell migration (GO:0036336),0.77,6.79E-03,5.92E+02
+dendritic cell chemotaxis (GO:0002407),0.77,6.71E-03,7.08E+02
+cellular response to interferon-gamma (GO:0071346),0.75,7.60E-04,1.13E+03
+extracellular structure organization (GO:0043062),0.70,1.10E-07,8.85E+01
+external encapsulating structure organization (GO:0045229),0.70,4.67E-08,9.64E+01
+regulation of immune response (GO:0050776),0.82,5.14E-03,1.85E+02
+negative regulation of T cell activation (GO:0050868),0.66,3.11E-03,4.28E+02
+phospholipase C-activating G protein-coupled receptor signaling pathway (GO:0007200),0.66,9.33E-03,2.60E+02
+regulation of T cell proliferation (GO:0042129),0.66,7.93E-04,4.13E+02
+chemokine-mediated signaling pathway (GO:0070098),0.68,4.01E-04,5.04E+02
+positive regulation of chemotaxis (GO:0050921),0.59,6.71E-03,9.51E+02
+cellular response to cytokine stimulus (GO:0071345),0.52,2.90E-03,2.98E+02
+positive regulation of lymphocyte proliferation (GO:0050671),0.70,8.75E-03,3.05E+02
+"complement activation, classical pathway (GO:0006958)",0.61,4.54E-05,9.67E+03
+nervous system development (GO:0007399),0.61,3.84E-03,3.56E+01
+heart development (GO:0007507),0.61,2.69E-03,7.04E+01
+positive regulation of MAPK cascade (GO:0043410),0.66,9.24E-06,2.95E+02
+cellular response to chemokine (GO:1990869),0.75,4.14E-04,4.57E+02
+regulation of calcium ion-dependent exocytosis (GO:0017158),0.59,4.08E-03,1.91E+02
+positive regulation of ERK1 and ERK2 cascade (GO:0070374),0.61,6.12E-05,2.77E+02
+B cell receptor signaling pathway (GO:0050853),0.61,7.09E-04,5.07E+02
+calcium-mediated signaling (GO:0019722),0.61,6.85E-03,1.07E+02

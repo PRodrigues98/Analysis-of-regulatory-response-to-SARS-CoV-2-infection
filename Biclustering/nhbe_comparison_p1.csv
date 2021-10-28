@@ -1,0 +1,27 @@
+,NHBE SARS-CoV-2,NHBE SARS-CoV-2,NHBE SARS-CoV-2,NHBE IAV,NHBE IAV,NHBE IAV
+,count,p-value,c-score,count,p-value,c-score
+extracellular matrix organization (GO:0030198),1.00,3.31E-08,1.70E+02,1.00,3.31E-08,1.70E+02
+cardiac muscle tissue development (GO:0048738),0.79,4.78E-03,3.00E+02,0.91,4.78E-03,3.00E+02
+inflammatory response (GO:0006954),0.75,3.90E-04,1.47E+02,0.91,3.90E-04,2.71E+02
+dendritic cell migration (GO:0036336),0.75,6.79E-03,5.92E+02,0.86,6.79E-03,5.92E+02
+dendritic cell chemotaxis (GO:0002407),0.75,6.71E-03,7.08E+02,0.86,6.71E-03,7.08E+02
+cellular response to interferon-gamma (GO:0071346),0.88,4.31E-03,3.97E+02,0.79,4.31E-03,5.12E+02
+extracellular structure organization (GO:0043062),0.75,1.10E-07,8.85E+01,0.86,1.10E-07,8.85E+01
+external encapsulating structure organization (GO:0045229),0.75,4.67E-08,9.64E+01,0.86,4.67E-08,9.64E+01
+regulation of immune response (GO:0050776),0.71,5.14E-03,1.85E+02,0.79,5.14E-03,1.85E+02
+negative regulation of T cell activation (GO:0050868),0.75,9.83E-03,1.13E+03,0.77,3.11E-03,4.28E+02
+phospholipase C-activating G protein-coupled receptor signaling pathway (GO:0007200),0.67,9.33E-03,2.60E+02,0.81,9.33E-03,2.60E+02
+regulation of T cell proliferation (GO:0042129),0.67,7.93E-04,4.13E+02,0.77,7.93E-04,4.13E+02
+chemokine-mediated signaling pathway (GO:0070098),0.67,1.55E-04,5.04E+02,0.67,1.55E-04,5.04E+02
+positive regulation of chemotaxis (GO:0050921),0.62,6.71E-03,3.42E+02,0.79,6.71E-03,9.51E+02
+cellular response to cytokine stimulus (GO:0071345),0.92,2.50E-04,6.55E+05,0.70,2.90E-03,1.42E+02
+positive regulation of lymphocyte proliferation (GO:0050671),0.54,3.72E-03,1.66E+02,0.70,3.72E-03,1.66E+02
+"complement activation, classical pathway (GO:0006958)",0.58,4.54E-05,8.66E+03,0.70,4.54E-05,9.67E+03
+nervous system development (GO:0007399),0.54,3.84E-03,3.69E+01,0.74,3.84E-03,3.74E+01
+heart development (GO:0007507),0.54,2.69E-03,7.04E+01,0.74,2.69E-03,7.04E+01
+positive regulation of MAPK cascade (GO:0043410),0.54,9.24E-06,2.95E+02,0.70,9.24E-06,2.95E+02
+cellular response to chemokine (GO:1990869),0.62,1.94E-04,4.57E+02,0.63,1.94E-04,4.57E+02
+regulation of calcium ion-dependent exocytosis (GO:0017158),0.54,4.08E-03,1.91E+02,0.72,4.08E-03,1.91E+02
+positive regulation of ERK1 and ERK2 cascade (GO:0070374),0.54,6.12E-05,2.77E+02,0.70,6.12E-05,2.77E+02
+B cell receptor signaling pathway (GO:0050853),0.54,7.09E-04,5.07E+02,0.70,7.09E-04,5.07E+02
+calcium-mediated signaling (GO:0019722),0.54,6.85E-03,1.07E+02,0.70,6.85E-03,1.07E+02

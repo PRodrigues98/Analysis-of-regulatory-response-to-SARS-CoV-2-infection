@@ -1,0 +1,27 @@
+,A549 HPIV3,A549 HPIV3,A549 HPIV3,A549 IAV,A549 IAV,A549 IAV
+,count,p-value,c-score,count,p-value,c-score
+epidermis development (GO:0008544),1.00,1.83E-04,1.44E+03,1.00,2.38E-14,9.94E+02
+cellular response to interferon-gamma (GO:0071346),0.92,1.15E-07,7.32E+02,0.86,4.74E-06,2.91E+02
+cytokine-mediated signaling pathway (GO:0019221),0.90,6.95E-03,4.40E+02,1.00,2.87E-10,4.36E+02
+inflammatory response (GO:0006954),0.92,5.30E-05,1.97E+02,1.00,3.90E-04,2.53E+02
+interferon-gamma-mediated signaling pathway (GO:0060333),0.92,1.03E-03,9.72E+02,0.61,8.73E-03,2.19E+02
+antigen receptor-mediated signaling pathway (GO:0050851),0.63,6.48E-06,8.87E+01,0.59,1.92E-03,8.87E+01
+"complement activation, classical pathway (GO:0006958)",0.86,6.59E-03,8.66E+03,0.78,4.54E-05,8.66E+03
+skin development (GO:0043588),0.59,4.62E-04,3.80E+02,0.57,9.85E-04,3.80E+02
+cellular response to cytokine stimulus (GO:0071345),0.55,5.74E-05,1.49E+02,0.71,5.74E-05,1.69E+02
+chemokine-mediated signaling pathway (GO:0070098),0.71,6.02E-05,8.65E+02,0.67,7.71E-03,5.04E+02
+humoral immune response mediated by circulating immunoglobulin (GO:0002455),0.82,8.06E-05,5.89E+03,0.76,5.90E-05,5.89E+03
+positive regulation of response to external stimulus (GO:0032103),0.71,3.65E-03,1.95E+02,0.76,4.51E-03,1.47E+02
+epidermal cell differentiation (GO:0009913),0.71,8.76E-05,9.29E+02,0.76,9.67E-04,9.29E+02
+keratinocyte differentiation (GO:0030216),0.71,6.21E-04,1.29E+03,0.76,1.51E-03,1.29E+03
+regulation of immune response (GO:0050776),0.88,3.64E-07,2.29E+02,0.88,1.18E-08,7.11E+02
+cellular response to chemokine (GO:1990869),0.67,8.06E-05,7.92E+02,0.59,1.94E-04,4.57E+02
+positive regulation of defense response (GO:0031349),0.45,2.07E-03,2.17E+02,0.75,2.07E-03,1.37E+02
+antigen processing and presentation of exogenous peptide antigen via MHC class II (GO:0019886),0.43,6.36E-03,6.51E+02,0.29,9.02E-03,6.51E+02
+antigen processing and presentation of peptide antigen via MHC class II (GO:0002495),0.43,6.81E-03,6.34E+02,0.27,9.02E-03,6.34E+02
+positive regulation of chemotaxis (GO:0050921),0.80,6.20E-04,4.14E+02,0.82,6.71E-03,3.42E+02
+extracellular matrix organization (GO:0030198),0.59,1.13E-03,3.90E+01,0.57,1.13E-03,4.23E+01
+T cell receptor signaling pathway (GO:0050852),0.35,2.70E-03,6.64E+01,0.24,2.46E-03,3.68E+01
+antigen processing and presentation of exogenous peptide antigen (GO:0002478),0.31,7.80E-03,6.10E+02,0.16,9.02E-03,6.10E+02
+positive regulation of protein phosphorylation (GO:0001934),0.29,4.81E-03,5.19E+01,0.31,5.56E-03,5.19E+01
+mRNA processing (GO:0006397),0.29,3.83E-05,5.11E+02,0.20,2.88E-06,3.67E+02
